@@ -1,0 +1,4 @@
+function wcl()
+        {
+            window.close();
+        }

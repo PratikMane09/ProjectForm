@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container
+        {
+            height: 500px;
+            width: 700px;
+            background-color: white;
+            align-self: center;
+            border-radius: 30px;
+            margin-left: 400px;
+            margin-top: 100px;
+            display: flex;
+
+        }
+        .left-item
+        {
+            height: 450px;
+            width:350px;
+            padding-left: 30px;
+            padding-top: 40px;
+        }
+        
+        h1{
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .right-item
+        {
+            margin-top:30px;
+        }
+        .box{
+            height:40px;
+            width: 315px;
+            border-radius: 5px;
+            border-radius:grey;
+        }
+        h3{
+            font-size: 16px;
+        }
+        
+        .button
+        {
+            margin-top:12px;
+            height:42px;
+            width: 321px;
+            border-radius: 5px;
+            color: white;
+            background-color:black;
+        }
+        #Invalid
+        {
+            color:tomato;
+        }
+       
+        .points > ul {
+            list-style: none;
+            padding: 0;
+        }
+        .points > ul > li {
+            padding: 0.5rem 0 0.5rem 0;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .icon-list {
+            margin-right: 5px;
+        }
+
+        @media  (max-width: 600px) {
+            .container{
+                flex-direction: column-reverse;
+                background-color: white;
+                overflow-x: hidden;
+                padding: 1rem;
+                width: 350px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-item">
+            <h1>Stay updated!!!</h1><br>
+            Join 60,000+ product manger receiving monthly updates on:<br>
+            <div id="inner" class="points">
+            <!-- <img src="icon-list.svg">
+            <span>Product discovery and building what matters</span><br>
+            <img src="icon-list.svg"> Measuring to ensure updates are a success<br>
+            <img src="icon-list.svg"> And much more! <br><br> -->
+            <div class="points">
+                <ul>
+                  <li><img class="icon-list" src="icon-list.svg">Product discovery and building what matters
+                  </li>
+                  <li><img class="icon-list" src="icon-list.svg">Measuring to ensure updates are a success
+                  </li>
+                  <li><img class="icon-list" src="icon-list.svg">And much more!</li>
+                </ul>
+      
+              </div>
+      
+            </div>
+            <form name="frm1">
+                <h3>Email Address        <p1 id="Invalid"></p1></h3>
+                <input type="text" name="t1" placeholder="email@company.com" class="box"><br>
+                <input type="button" value="Subscribe to monthly Newsletter" class="button" onclick="validate()">
+                
+                <script src="valid.js"></script>
+                    
+            </form>
+        </div>
+        <div class="right-item">
+            <img src="illustration-sign-up-desktop.svg" height="450px" width="350px">
+        </div>
+    </div>
+</body>
+</html>
